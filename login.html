@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Grand Tourer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Grand Tourer</h1>
+                <p class="tagline">Exquisite Vintage Automobiles</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Collection</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="login.html" class="active" id="login-status">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Account Access</h2>
+            <p>Enter your credentials to access your account</p>
+        </div>
+    </section>
+
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container" id="login-form-container">
+                <form id="login-form" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-full">Sign In</button>
+                </form>
+                <p class="login-note">For demonstration purposes, any email and password will work.</p>
+            </div>
+            
+            <div class="profile-container hidden" id="profile-container">
+                <h3>Welcome, <span id="user-name">Valued Client</span></h3>
+                <p>You are now signed in to your Grand Tourer account.</p>
+                <div class="profile-actions">
+                    <a href="cart.html" class="btn btn-secondary">View Cart</a>
+                    <button id="logout-btn" class="btn">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Grand Tourer</h2>
+                    <p>Purveyors of Automotive Excellence Since 1978</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collection</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>17 Savile Row<br>Mayfair, London<br>United Kingdom</p>
+                    <p>+44 (0) 20 7123 4567<br>inquiries@grandtourer.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Grand Tourer Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="auth.js"></script>
+<script>
+  setupLoginForm();
+  updateLoginStatus();
+</script>
+
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            updateLoginStatus();
+            setupLoginForm();
+        });
+    </script>
+
+</body>
+</html>
+
