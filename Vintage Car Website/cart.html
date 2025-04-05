@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Grand Tourer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Grand Tourer</h1>
+                <p class="tagline">Exquisite Vintage Automobiles</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Collection</a></li>
+                    <li><a href="cart.html" class="active">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="login.html" id="login-status">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Your Selection</h2>
+            <p>Review your chosen automobiles</p>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="container">
+            <div id="cart-items">
+                <!-- Cart items will be loaded from JavaScript -->
+            </div>
+            <div class="cart-summary" id="cart-summary">
+                <!-- Cart summary will be loaded from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Grand Tourer</h2>
+                    <p>Purveyors of Automotive Excellence Since 1978</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collection</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>17 Savile Row<br>Mayfair, London<br>United Kingdom</p>
+                    <p>+44 (0) 20 7123 4567<br>inquiries@grandtourer.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Grand Tourer Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            displayCart();
+            updateCartCount();
+            updateLoginStatus();
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Tourer | Exquisite Vintage Automobiles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Grand Tourer</h1>
+                <p class="tagline">Exquisite Vintage Automobiles</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Collection</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="login.html" id="login-status">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Timeless Elegance on Wheels</h2>
+            <p>Discover our curated collection of the world's finest vintage automobiles</p>
+            <a href="products.html" class="btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <div class="feature-icon">★</div>
+                <h3>Curated Selection</h3>
+                <p>Each automobile in our collection has been carefully selected for its historical significance, condition, and provenance.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h3>Authenticated History</h3>
+                <p>Every vehicle comes with detailed documentation of its history, restoration work, and previous ownership.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">♦</div>
+                <h3>Concierge Service</h3>
+                <p>Our white-glove delivery ensures your prized acquisition arrives in perfect condition, anywhere in the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-car">
+        <div class="container">
+            <div class="featured-content">
+                <h2>Featured Automobile</h2>
+                <h3>1961 Jaguar E-Type Series 1</h3>
+                <p>The epitome of automotive beauty, Enzo Ferrari himself declared it "the most beautiful car ever made." This pristine example has been meticulously restored to its original glory.</p>
+                <a href="products.html" class="btn btn-secondary">View Details</a>
+            </div>
+            <div class="featured-image">
+                <img src="https://www.sportscarmarket.com/1974-jaguar-e-type-series-iii-convertible-main" alt="1961 Jaguar E-Type">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>From Our Clients</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"The acquisition process was flawless. Grand Tourer found me the exact Mercedes 300SL I had been searching for years."</p>
+                    <p class="client">— James H., London</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Their attention to detail and knowledge of automotive history is unparalleled. I wouldn't trust anyone else with my collection."</p>
+                    <p class="client">— Elizabeth R., New York</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Grand Tourer</h2>
+                    <p>Purveyors of Automotive Excellence Since 1978</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collection</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>17 Savile Row<br>Mayfair, London<br>United Kingdom</p>
+                    <p>+44 (0) 20 7123 4567<br>inquiries@grandtourer.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Grand Tourer Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            updateLoginStatus();
+        });
+    </script>
+</body>
+</html>
+
